@@ -4,8 +4,8 @@ import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 import NavigationUtil from "../navigator/NavigationUtil"
 import LinearGradient from "react-native-linear-gradient";
 
-type Props = {};
-export default class Welcome extends Component<Props> {
+
+export default class Welcome extends Component {
   componentDidMount() {
     this.timer = setTimeout(()=> {
       NavigationUtil.resetToHomePage({
